@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "Roboto-Light";
+	src: url("assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+}
+
+body {
+	font-family: "Roboto-Light";
+	color:black;
+}
+
+#head { background:#379EC1 url( ../images/bg_header.jpg) no-repeat; background-size: cover; height:20px; text-align: center; padding-top:240px; font-weight:300; }
+#head.secondary { height:100px; min-height: 100px; padding-top:0px; }
+	#head .lead { font-size:44px; margin-bottom:6px; color:black; line-height:1.15em; }
+	#head .tagline { color:black; margin-bottom:25px; }
+		#head .tagline a { color:black; }
+	#head .btn { margin-bottom:10px;}
+	#head .btn-default { text-shadow: none; background:transparent; color:black; -webkit-box-shadow:inset 0px 0px 0px 3px black; -moz-box-shadow:inset 0px 0px 0px 3px black; box-shadow:inset 0px 0px 0px 3px black; background: transparent; }
+		#head .btn-default:hover,
+		#head .btn-default:focus { color:black; -webkit-box-shadow:inset 0px 0px 0px 3px black; -moz-box-shadow:inset 0px 0px 0px 3px black; box-shadow:inset 0px 0px 0px 3px black; background: transparent; }
+		#head .btn-default:active,
+		#head .btn-default.active { color:black; -webkit-box-shadow:inset 0px 0px 0px 3px black; -moz-box-shadow:inset 0px 0px 0px 3px black; box-shadow:inset 0px 0px 0px 3px black; background: transparent; }
+
+@media (max-width: 767px) {
+	#head { min-height:420px; padding-top:160px; }
+	#head .lead { font-size: 34px; }
+}
+
+
+/* Autohide navbar */
+.slideUp { top:-100px; }
+.headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
+
+
+/* Highlights (in jumbotron in most cases) */
+.highlight { margin-top:40px; }
+	.h-caption { text-align: center; } 
+	.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
+	.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
+	.h-body { }
+
+
+/* Typography */
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
+blockquote { color: black; margin:30px 0 30px; }
+label { color: black; }
+.thin { font-weight:300; }
+.page-title { margin-top:20px; font-weight:300; }
+.text-muted { color:black; }
+.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+ul.list-spaces li{ margin-bottom:10px; }
+
+/* Helpers */
+.container-full { margin: 0 auto; width: 100%; }
+.top-space { margin-top: 60px; }
+.top-margin { margin-top:20px; }
+
+img { max-width:100%; }
+img.pull-right { margin-left: 10px; }
+img.pull-left { margin-right: 10px; }
+#map { width:100%; height:280px; }
+#social { margin-top:50px; margin-bottom:50px; }
+	#social .wrapper { width:340px; margin:0 auto; }
+
+/* Main content block */
+.maincontent { }
+
+/* Sidebars */
+.sidebar { padding-top:36px; padding-bottom:30px; }
+	.sidebar .widget { margin-bottom:20px; }
+	.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } 
+
+/* Footer */
+.footer1 { background: #379EC1; font-size: 12px; color: black; text-align: center; line-height: 50px; padding: 0 20px; margin-top: 320px;}
+	.footer1 a { color: #379EC1}
+
+	.widget-simplenav { margin-left:-5px; }
+	.widget-simplenav a{ margin:0 5px; }
+
+.checkbox-custom.right {
+	padding: 0 25px 0 0;
+	display: inline-block;
+}
+
+.button {
+	color: black;
+	background-color: #659224;
+	border-color: #659224;
+	border-radius: 0.25rem;
+	font-weight: 400;
+	text-align: center;
+	padding: 0.375rem 0.75rem;
+	height: 50px;
+	width: 200px;
+}

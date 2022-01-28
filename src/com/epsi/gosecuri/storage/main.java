@@ -13,7 +13,6 @@ public class main {
         HashMap<String, ArrayList<String>> agents = new HashMap<String,ArrayList<String>>();
 
         //Récupère le fichier list.txt et staff.txt
-        URL list = getFileFromGit("liste");
         URL staff = getFileFromGit("staff");
 
         //Lire chaque ligne de staff.txt (lecture fichier)
@@ -39,11 +38,14 @@ public class main {
 
         //System.out.println(agents);
         //réécrire tout ça dans mapAgents.txt, stocké jsp où pour le prochain trigger
-        File file = new File("C:\\Users\\Lele\\IdeaProjects\\gosecurilocal\\mapAgents.txt");
-        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-        bw.write(agents.toString());
-        bw.close();
-
+        try{
+            File file = new File("C:\\Users\\Lele\\IdeaProjects\\gosecurilocal\\mapAgents.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+            bw.write(agents.toString());
+            bw.close();
+        } catch (FileNotFoundException e){
+            throw new FileNotFoundException("Le chemin d'accès au fichier txt mapAgent est incorrect.");
+        }
     }
 
     private static URL getFileFromGit(String filename) throws Exception{
