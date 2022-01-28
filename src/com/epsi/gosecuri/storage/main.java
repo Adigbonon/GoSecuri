@@ -27,7 +27,7 @@ public class main {
                 int endLengthFile = getFileFromGit(key).getFile().length() -4;
                 String fileNameGit =getFileFromGit(key).getFile().substring(beginLengthFile, endLengthFile) ;
 
-                if (key == fileNameGit) {
+                if (key.equals(fileNameGit)) {
                     URL url = getFileFromGit(key);
                     ArrayList<String> infoAgent = readInfoAgentFromGit(url); //lire chaque ligne et l'ajouter à une liste
                     agents.replace(key, infoAgent); // stocke la liste dans la map à l'emplacement correspondant
@@ -37,8 +37,13 @@ public class main {
             throw new NullPointerException("Il manque un fichier correspondant au membre du staff " + agents.keySet());
         }
 
-        System.out.println(agents);
-        //réécrire tout ça dans un fichier Recap stocké jsp où pour le prochain trigger
+        //System.out.println(agents);
+        //réécrire tout ça dans mapAgents.txt, stocké jsp où pour le prochain trigger
+        File file = new File("C:\\Users\\Lele\\IdeaProjects\\gosecurilocal\\mapAgents.txt");
+        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+        bw.write(agents.toString());
+        bw.close();
+
     }
 
     private static URL getFileFromGit(String filename) throws Exception{

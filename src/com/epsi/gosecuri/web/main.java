@@ -6,6 +6,8 @@ import java.net.URL;
 
 public class main {
     public static void main (String[] args){
+        String htmlfile="",cssStyle="",inputCheckbox,header, body, footer;
+
         int nbStaff = 0;
         //Récup le fichier Recap depuis le git
         //Sortir les listes avec les clés-nom
@@ -25,5 +27,8 @@ public class main {
             System.out.println(line);
         }
     }
+    private void addButton(String content, String css){ }
+    private void addImage(){}
+    private void addPersonCheckbox(String name){}
 }
 
