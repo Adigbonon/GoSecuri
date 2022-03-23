@@ -54,13 +54,15 @@ public class main {
         }
 
         //Transformer String to String JSON
-        //JSONParser parser = new JSONParser(mapText);
+        String jsonString ="";
+        //JSONParser parser = new JSONParser(jsonString);
         //JSONObject json = (JSONObject) parser.parse(stringToParse);
     }
 
     private void addButton(String content, String css){
 
     }
+
     private void addImage(){
 
     }
