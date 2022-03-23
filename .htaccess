@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "Veuillez vous identifier: "
+AuthUserFile /etc/apache2/.htpasswd
+<Limit GET POST>
+   Require valid-user
+</Limit>
