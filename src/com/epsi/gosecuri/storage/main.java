@@ -8,13 +8,12 @@ public class main {
     public static void main (String[] args) throws Exception{
         HashMap<String, ArrayList<String>> agents = new HashMap<String,ArrayList<String>>();
         ArrayList<String> infoAgent = new ArrayList<String>();
+        ArrayList<String> listAgent = new ArrayList<String>();
 
         //Etape 1 : récupérer les données staff et matériel depuis Git
-
-
         URL staff = getFileFromGit("staff"); //Récupérer l'url git de staff.txt
         agents = readStaffFromGit(staff); // Stocker les données dans une hashMap
-
+        listAgent = readInfoAgentFromGit(staff);
         try
         {
             for(Map.Entry<String, ArrayList<String>> entry : agents.entrySet()) //Cherche les fichiers git correspondant à chaque agent
@@ -47,12 +46,16 @@ public class main {
         }
 
         //Etape 2 : Construire la page d'accueil
-        createHomePage(infoAgent);
+        createHomePage(listAgent);
 
-        //Etape 3 : Générer les pages des agents
+        //Etape 3 : Générer les pages des agents via un thread
+        for(Map.Entry<String, ArrayList<String>> entry : agents.entrySet()) //Cherche les fichiers git correspondant à chaque agent
+        {
+            String keyAgent = entry.getKey();
+            ArrayList identityAgent = entry.getValue();
 
-
-
+            new threadAgent(keyAgent,identityAgent).start();
+        }
     }
 
 
