@@ -11,7 +11,6 @@ import java.util.List;
 
 public class threadAgent extends Thread {
     private String Agent;
-    private String value = "checked";
     private List listIdentity;
 
     threadAgent(String Agent, ArrayList<String> listIdentity)
@@ -71,7 +70,7 @@ public class threadAgent extends Thread {
                            "            </div>\n" +
                            "            <div class=\" col-md-7\"><h3>"+ listIdentity.get(2)+"</h3></div>\n" +
                            "            <div class=\" col-md-2\">\n" +
-                           "                <img src=\"assets/images/"+Agent+".png\" alt=\"avatar\" style=\"width:150px;height:150px;\">\n" +
+                           "                <img src=\"https://raw.githubusercontent.com/Adigbonon/GoSecuri/files/"+Agent+".png\" alt=\"avatar\" style=\"width:150px;height:150px;\">\n" +
                            "            </div>\n" +
                            "        </div>"+
                            "        <div class=\"row\">\n" +
