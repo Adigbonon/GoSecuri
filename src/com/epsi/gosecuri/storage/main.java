@@ -95,7 +95,7 @@ public class main {
     }
 
     private static void createHomePage(ArrayList<String> infoAgent){
-        //Création ou Update du fichier accueil.html
+        //Création ou Update du fichier index.html
         File file = new File("C:\\Users\\Lele\\IdeaProjects\\gosecurilocal\\src\\com\\epsi\\gosecuri\\web\\Accueil.html");
 
         if(!file.exists())
@@ -122,7 +122,7 @@ public class main {
                             "    <div class=\"container\">\n" +
                             "        <div class=\"navbar-header\">\n" +
                             "            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> </button>\n" +
-                            "            <a class=\"navbar-brand\" href=\"accueil.html\"><img src=\"assets/images/logo.png\" alt=\"Logo\" width=\"100\" height=\"70\"></a>\n" +
+                            "            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/logo.png\" alt=\"Logo\" width=\"100\" height=\"70\"></a>\n" +
                             "        </div>\n" +
                             "    </div>\n" +
                             "</div>",

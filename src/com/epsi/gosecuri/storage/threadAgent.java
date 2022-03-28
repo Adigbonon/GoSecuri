@@ -50,14 +50,14 @@ public class threadAgent extends Thread {
                             "    <div class=\"container\">\n" +
                             "        <div class=\"navbar-header\">\n" +
                             "            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> </button>\n" +
-                            "            <a class=\"navbar-brand\" href=\"accueil.html\"><img src=\"assets/images/logo.png\" alt=\"Logo\" width=\"100\" height=\"70\"></a>\n" +
+                            "            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/logo.png\" alt=\"Logo\" width=\"100\" height=\"70\"></a>\n" +
                             "        </div>\n" +
                             "    </div>\n" +
                             "</div>",
                     "<header id=\"head\" class=\"secondary\"></header>",
                    "<div class=\"container\">\n" +
                            "    <ol class=\"breadcrumb\">\n" +
-                           "        <li><a href=\"accueil.html\">Accueil</a></li>\n" +
+                           "        <li><a href=\"index.html\">Accueil</a></li>\n" +
                            "        <li class=\"active\" id=\"employe_actif\"></li>\n" +
                            "    </ol>\n" +
                            "    <div class=\"row\">\n" +
